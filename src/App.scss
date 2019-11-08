@@ -1,0 +1,29 @@
+body {
+	background-color: #f7f7f9;
+}
+
+.u-checkbox {
+	&__container input:checked ~ .badge {
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+		transform: scale(1);
+		border: 1px solid #dee2e6!important
+	}
+
+	&__container {
+		.badge {
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				cursor: pointer;
+				filter: brightness(95%);
+			}
+		}
+	}
+
+	&--hidden {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+	}
+}
