@@ -48,9 +48,9 @@ export default class AddExpense extends React.Component {
                             <div class="col-sm-10 d-flex align-items-center">
                                 {Object.keys(TAGS).map((keyName, i) => (
                                     <React.Fragment>
-                                        <label className="u-checkbox__container">
-                                            <input type="checkbox" className="u-checkbox--hidden"></input>
-                                            <span className={`badge badge-pill badge-${TAGS[keyName].color} ml-1 float-left d-block`}>{TAGS[keyName].name}</span>
+                                        <label className="u-checkbox__container" key={i}>
+                                            <input type="checkbox" className="u-checkbox--hidden" key={i}></input>
+                                            <span className={`badge badge-pill badge-${TAGS[keyName].color} ml-1 float-left d-block`} key={i}>{TAGS[keyName].name}</span>
                                         </label>
                                     </React.Fragment>
                                 ))}

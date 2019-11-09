@@ -23,7 +23,7 @@ export default class Tag extends React.Component {
 
     render() {
         return (
-            <span className={`badge badge-pill badge-${tags[this.state.name].color} ml-1 float-left d-block`}>{tags[this.state.name].name}</span>
+            <span className={`badge badge-pill badge-${tags[this.state.name].color} m-1 float-left d-block`}>{tags[this.state.name].name}</span>
         )
     }
 }
