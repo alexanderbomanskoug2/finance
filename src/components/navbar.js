@@ -7,7 +7,7 @@ export default class Navbar extends React.Component {
             <nav className="navbar navbar-expand-md navbar-dark bg-primary shadow">
                 <div className="container">
                     <a className="navbar-brand" href="#">
-                        Finance
+                    <i class="fas fa-comment-dollar mr-1"></i>Finance
                     </a>
 
                     <button

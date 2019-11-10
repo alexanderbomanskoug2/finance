@@ -67,9 +67,16 @@ export default function Expense() {
 				</div>
       		</div>
 		
-			{costs.map((expense, key) =>
-				<Cost name={expense.name} tags={expense.tags} cost={expense.cost} occurrence={expense.occurrence} key={key}/>
-			)}
+            <div className="d-flex align-items-stretch">
+                <div className="bg-primary ml-5 mr-2" style={{height: "100%", width: "2px"}}></div>
+
+                <div className="flex-fill ">
+                    {costs.map((expense, key) =>
+                        <Cost name={expense.name} tags={expense.tags} cost={expense.cost} occurrence={expense.occurrence} key={key}/>
+                    )}
+                </div>
+            </div>
+			
 		</div>
 	)
   }
